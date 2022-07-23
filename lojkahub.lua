@@ -251,6 +251,11 @@ Section2:NewToggle('Auto Fist Mastery In Future', 'Auto Makes A fist Mastery', f
 	end
 end)
 
+Section2:NewTextBox("Dupe Money With Health Potion", "Dupes Your Money", function(count)
+	local silly1 = 300 local silly2 = 300 local silly3 = -count
+	game:GetService("ReplicatedStorage").purchase_elixirs:FireServer(silly1, silly2, silly3)
+end)
+
 
 
 
